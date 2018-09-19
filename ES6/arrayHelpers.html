@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        // let val = 30;
+
+        // for(var i=0; i<5; i++){
+        //    // console.log(i);
+        // }
+        // console.log(i);
+
+
+
+        // for(let j=0; j<5; j++){
+        //    // console.log(i);
+        // }
+        // console.log(j);
+
+
+
+        // const pi = 3.1412;
+        // pi = pi*2;        
+        // console.log(pi);
+
+        // ******************** Array Helpers ********************
+
+        let arr = [1,2,3];
+
+        for(let i=0; i<arr.length; i++){
+            console.log(arr[i]);
+        }
+        
+        arr.forEach(function(val){
+            console.log(val);
+        });
+
+        let temp = [];
+        for(let i=0; i<arr.length; i++){
+            temp.push(arr[i]*2);
+        }
+        console.log(temp);
+
+        temp = arr.map(function(val){
+            return val*2;
+        });
+        console.log(temp);
+
+        // arrow functions
+
+        // function getName(){
+        //     return "John";
+        // }
+
+        let getName = ()=>{return "John"};
+
+        console.log(getName());
+
+        temp = arr.map((val)=>(val*2));
+        console.log(temp);
+
+    
+    </script>
+
+</html>
+</body>

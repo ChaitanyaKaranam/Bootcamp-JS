@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        DOM Manipulation
+        <div id="manipulate">
+        </div>
+    </div>
+    <script>
+        document.getElementById('manipulate').innerText='Hello World';
+
+        document.getElementById('manipulate').innerText=new Date().getDate();
+
+        setInterval(function(){
+            document.getElementById('manipulate').innerText=new Date().getSeconds();
+        },1000);
+    </script>
+</body>
+</html>
